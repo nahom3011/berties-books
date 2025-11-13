@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%=shopData.shopName%></title>
+        <link rel="stylesheet"  type="text/css" href="/main.css" />
+    </head>
+    <body>
+        <h1>Here are books that we sell:</h1>
+        <u>
+            <% availableBooks.forEach(item => { %>
+                <li><%= item.name %>, £<%= item.price%></li>
+            <% }) %>
+        </u>
+    </body>
+</html>
