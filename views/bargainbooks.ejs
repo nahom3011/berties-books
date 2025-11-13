@@ -5,12 +5,12 @@
         <link rel="stylesheet"  type="text/css" href="/main.css" />
     </head>
     <body>
-        <h1><%=shopData.shopName%></h1>
-        <h2>Here are books that we sell:</h2>
+        <h1><%=shopData.shopName%>: Bargain books</h1>
+        <h2>All for less than £20</h2>
         <ul>
             <% availableBooks.forEach(item => { %>
                 <li><%= item.name %>, £<%= item.price%></li>
-            <% }) %>
+            <% }) %>  
         </ul>
     </body>
 </html>
